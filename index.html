@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jest Cheatsheet</title>
+
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <div id="container">
+      <div class="block">
+        <ul style="background-color: #FF8360;">
+          <li><h2>Test Structure</h2></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#basic-testing">describe</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#basic-testing">describe.only</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#basic-testing">describe.skip</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#basic-testing">test</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#basic-testing">test.only</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#basic-testing">test.skip</a></li>
+          <li><a href="">test.concurrent</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#basic-testing">it</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#basic-testing">it.only</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#basic-testing">it.skip</a></li>
+          <li><a href="">it.concurrent</a></li>
+          <li><a href="">afterEach</a></li>
+          <li><a href="">beforeEach</a></li>
+          <li><a href="">afterAll</a></li>
+          <li><a href="">beforeAll</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#requirerequireactualmodulename">require.requireActual</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#requirerequiremockmodulename">require.requireMock</a></li>
+
+        </ul>
+
+        <ul style="background-color: #E2F1AF;">
+          <li><h2>CLI options</h2></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jest-cli-options">--collectCoverageFrom</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jest-cli-options">--coverage</a></li>
+          <li><a href="">--no-cache</a></li>
+          <li><a href="">--runInBand -i</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jest-cli-options">--testNamePattern -t</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jest-cli-options">--updateSnapshot -u</a></li>
+        </ul>
+      </div>
+      <div class="block">
+        <ul style="background-color: #E8E288;">
+          <li><h2>Matchers</h2></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#expectvalue">expect(value)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#not">expect(value).not</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tobevalue">.toBe(value)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tobeclosetonumber-numdigits">.toBeCloseTo(number, numDigits)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tobedefined">.toBeDefined()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tobefalsy">.toBeFalsy()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tobegreaterthannumber">.toBeGreaterThan(number)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tobegreaterthanorequalnumber">.toBeGreaterThanOrEqual(number)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tobelessthannumber">.toBeLessThan(number)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tobelessthanorequalnumber">.toBeLessThanOrEqual(number)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tobeinstanceofclass">.toBeInstanceOf(Class)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tobenull">.toBeNull()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tobetruthy">.toBeTruthy()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tobeundefined">.toBeUndefined()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tocontainitem">.toContain(item)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tocontainequalitem">.toContainEqual(item)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#toequalvalue">.toEqual(value)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tohavelengthnumber">.toHaveLength(number)</a></li>
+          <li><a href="">.toHaveProrerty(propertyPath, [value])</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tomatchregexp">.toMatch(regexp)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tomatchobjectobject">.toMatchObject(object)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tomatchsnapshot">.toMatchSnapshot()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tothrowerrorerror">.toThrowError(error)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tothrowerrormatchingsnapshot">.toThrowErrorMatchingSnapshot()</a></li>
+      </div>
+      <div class="block">
+        <ul style="background-color: #8F92A7;">
+          <li><h2>Spy matchers</h2></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tohavebeencalled">.toHaveBeenCalled()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tohavebeencalledwitharg1-arg2-">.toHaveBeenCalledWith(arg1, arg2, ...)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tohavebeencalledtimesnumber">.toHaveBeenCalledTimes(number)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#tohavebeenlastcalledwitharg1-arg2-">.toHaveBeenLastCalledWith(arg1, arg2, ...)</a></li>
+        </ul>
+
+        <ul style="background-color: #CCF5AC">
+          <li><h2>jest object</h2></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestresetallmocks">jest.resetAllMocks()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestclearalltimers">jest.clearAllTimers()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestdisableautomock">jest.disableAutomock()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestenableautomock">jest.enableAutomock()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestfnimplementation">jest.fn(?implementation)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestismockfunctionfn">jest.isMockFunction(fn)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestgenmockfrommodulemodulename">jest.genMockFromModule(moduleName)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestmockmodulename-factory-options">jest.mock(moduleName, ?factory, ?options)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestresetmodules">jest.resetModules()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestrunallticks">jest.runAllTicks()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestrunalltimers">jest.runAllTimers()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestruntimerstotimemstorun">jest.runTimersToTime(msToRun)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestrunallimmediates">jest.runAllImmediates()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestrunonlypendingtimers">jest.runOnlyPendingTimers()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestsetmockmodulename-moduleexports">jest.setMock(moduleName, moduleExports)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestunmockmodulename">jest.unmock(moduleName)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestusefaketimers">jest.useFakeTimers()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#jestuserealtimers">jest.useRealTimers()</a></li>
+        </ul>
+
+      </div>
+
+      <div class="block">
+        <ul style="background-color: #00ABE7;">
+          <li><h2>Mock functions</h2></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#mockfnmockcalls">mockFn.mock.calls</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#mockfnmockinstances">mockFn.mock.instances</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#mockfnmockclear">mockFn.mockClear()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#mockfnmockreset">mockFn.mockReset()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#mockfnmockimplementationfn">mockFn.mockImplementation(fn)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#mockfnmockimplementationoncefn">mockFn.mockImplementationOnce(fn)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#mockfnmockreturnthis">mockFn.mockReturnThis()</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#mockfnmockreturnvaluevalue">mockFn.mockReturnValue(value)</a></li>
+          <li><a target="_blank" href="http://facebook.github.io/jest/docs/api.html#mockfnmockreturnvalueoncevalue">mockFn.mockReturnValueOnce(value)</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
